@@ -2,7 +2,7 @@ const data = {
   products: [
     {
       name: 'Spiderman',
-      slug: 'spiderman-game',
+      slug: 'spiderman-game1',
       image: './images/spidermanimg.jpg',
       edition: 'Game of the Year',
       description: 'best game ever',
@@ -15,7 +15,7 @@ const data = {
     },
     {
       name: 'Spiderman',
-      slug: 'spiderman-game',
+      slug: 'spiderman-game2',
       image: './images/spidermanimg.jpg',
       edition: 'Game of the Year',
       description: 'best game ever',
@@ -28,7 +28,7 @@ const data = {
     },
     {
       name: 'Spiderman',
-      slug: 'spiderman-game',
+      slug: 'spiderman-game3',
       image: './images/spidermanimg.jpg',
       edition: 'Game of the Year',
       description: 'best game ever',
