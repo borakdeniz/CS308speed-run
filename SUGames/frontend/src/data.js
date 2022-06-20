@@ -11,7 +11,7 @@ const data = {
       distributor: 'Sony',
       comments: [],
       rating: 4.5,
-      stock: '2',
+      stock: 0,
     },
     {
       name: 'Spiderman',
@@ -24,7 +24,7 @@ const data = {
       distributor: 'Sony',
       comments: [],
       rating: 4.5,
-      stock: '2',
+      stock: 0,
     },
     {
       name: 'Spiderman',
@@ -37,7 +37,7 @@ const data = {
       distributor: 'Sony',
       comments: [],
       rating: 4.5,
-      stock: '2',
+      stock: 2,
     },
   ],
 };
