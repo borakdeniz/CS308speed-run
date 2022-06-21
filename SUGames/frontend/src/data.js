@@ -10,12 +10,7 @@ const data = {
       distributor: 'Sony',
       comments: [],
       rating: 4.5,
-<<<<<<< Updated upstream
       stock: 0,
-=======
-      stock: 2,
-      slug: 'spiderman-game1',
->>>>>>> Stashed changes
     },
     {
       name: 'V Rising',
@@ -27,12 +22,7 @@ const data = {
       distributor: 'Stunlock Studios',
       comments: [],
       rating: 4.5,
-<<<<<<< Updated upstream
       stock: 0,
-=======
-      stock: 2,
-      slug: 'spiderman-game2',
->>>>>>> Stashed changes
     },
     {
       name: 'FIFA 2022',
@@ -45,10 +35,6 @@ const data = {
       comments: [],
       rating: 4.5,
       stock: 2,
-<<<<<<< Updated upstream
-=======
-      slug: 'spiderman-game3',
->>>>>>> Stashed changes
     },
   ],
 };

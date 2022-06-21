@@ -1,4 +1,21 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {
+      name: 'Basir',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'John',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
+
   products: [
     {
       name: 'Spiderman',
@@ -11,10 +28,7 @@ const data = {
       comments: [],
       rating: 4.5,
       stock: 2,
-<<<<<<< Updated upstream
-=======
-      slug: 'spiderman-game1',
->>>>>>> Stashed changes
+      slug: 'game_1',
     },
     {
       name: 'V Rising',
@@ -26,12 +40,8 @@ const data = {
       distributor: 'Stunlock Studios',
       comments: [],
       rating: 4.5,
-<<<<<<< Updated upstream
       stock: 0,
-=======
-      stock: 2,
-      slug: 'spiderman-game2',
->>>>>>> Stashed changes
+      slug: 'game_2',
     },
     {
       name: 'FIFA 2022',
@@ -44,10 +54,7 @@ const data = {
       comments: [],
       rating: 4.5,
       stock: 2,
-<<<<<<< Updated upstream
-=======
-      slug: 'spiderman-game3',
->>>>>>> Stashed changes
+      slug: 'game_3',
     },
   ],
 };
