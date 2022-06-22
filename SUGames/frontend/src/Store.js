@@ -36,14 +36,13 @@ function reducer(state, action) {
       localStorage.setItem('cartItems', JSON.stringify(cartItems));
       return { ...state, cart: { ...state.cart, cartItems } };
     }
-<<<<<<< Updated upstream
     case 'USER_SIGNIN':
       return { ...state, userInfo: action.payload };
     case 'USER_SIGNOUT':
       return {
         ...state,
         userInfo: null,
-=======
+      };
     case 'SAVE_SHIPPING_ADDRESS':
       return {
         ...state,
@@ -51,7 +50,6 @@ function reducer(state, action) {
           ...state.cart,
           shippingAddress: action.payload,
         },
->>>>>>> Stashed changes
       };
     default:
       return state;
