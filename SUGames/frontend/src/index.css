@@ -54,8 +54,19 @@ main {
 }
 .img-large {
   max-width: 100%;
+  max-width: 380px;
 }
 
 .img-thumbnail {
   height: 80px;
+}
+
+.image-resize {
+  height: 400px;
+}
+
+.cart-image-resize {
+  height: 200px;
+  max-width: 150px;
+  width: 100%;
 }

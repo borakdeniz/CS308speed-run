@@ -32,7 +32,7 @@ export default function CartScreen() {
                       <img
                         src={item.imageURL}
                         alt={item.name}
-                        className="img-fluid rounded img-thumbnail"
+                        className="img-fluid rounded img-thumbnail cart-image-resize"
                       ></img>{' '}
                       <Link to={`/product/${item.slug}`}>{item.name}</Link>
                     </Col>

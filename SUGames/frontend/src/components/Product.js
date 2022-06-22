@@ -9,7 +9,7 @@ function Product(props) {
       <Link to={`/product/${product.slug}`}>
         <img
           src={product.imageURL}
-          className="card-img-top"
+          className="card-img-top image-resize"
           alt={product.name}
         />
       </Link>
