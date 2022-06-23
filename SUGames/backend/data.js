@@ -20,6 +20,7 @@ const data = {
     {
       name: 'Spiderman',
       imageURL: '/images/spidermanimg.jpg',
+      category: 'Action Game',
       edition: 'Game of the Year',
       description: 'best game ever',
       genres: [],
@@ -33,6 +34,7 @@ const data = {
     {
       name: 'V Rising',
       imageURL: '/images/vrisingimg.jpg',
+      category: 'Survival Game',
       edition: 'Game of the Year',
       description: 'best game ever',
       genres: [],
@@ -46,6 +48,7 @@ const data = {
     {
       name: 'FIFA 2022',
       imageURL: '/images/fifa22img.jpg',
+      category: 'Sports Game',
       edition: 'Game of the Year',
       description: 'best game ever',
       genres: [],
