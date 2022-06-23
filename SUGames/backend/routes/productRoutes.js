@@ -18,11 +18,11 @@ productRouter.post(
     const newProduct = new Product({
       name: 'sample name ' + Date.now(),
       slug: 'sample-name-' + Date.now(),
-      image: '/images/p1.jpg',
+      imageURL: '/images/p1.jpg',
       price: 0,
       category: 'sample category',
-      brand: 'sample brand',
-      countInStock: 0,
+      distributor: 'sample brand',
+      stock: 0,
       rating: 0,
       numReviews: 0,
       description: 'sample description',
@@ -31,6 +31,7 @@ productRouter.post(
     res.send({ message: 'Product Created', product });
   })
 );
+
 productRouter.put(
   '/:id',
   isAuth,
@@ -40,13 +41,13 @@ productRouter.put(
     const product = await Product.findById(productId);
     if (product) {
       product.name = req.body.name;
-      product.slug = req.body.slug;
-      product.price = req.body.price;
       product.imageURL = req.body.imageURL;
       product.category = req.body.category;
+      product.description = req.body.description;
+      product.price = req.body.price;
       product.distributor = req.body.distributor;
       product.stock = req.body.stock;
-      product.description = req.body.description;
+      product.slug = req.body.slug;
       await product.save();
       res.send({ message: 'Product Updated' });
     } else {
@@ -54,6 +55,7 @@ productRouter.put(
     }
   })
 );
+
 const PAGE_SIZE = 3;
 productRouter.get(
   '/admin',

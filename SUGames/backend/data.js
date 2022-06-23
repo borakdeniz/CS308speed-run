@@ -30,6 +30,7 @@ const data = {
       rating: 4.5,
       stock: 2,
       slug: 'game_1',
+      numReviews: 7,
     },
     {
       name: 'V Rising',
@@ -44,6 +45,7 @@ const data = {
       rating: 4.5,
       stock: 0,
       slug: 'game_2',
+      numReviews: 7,
     },
     {
       name: 'FIFA 2022',
@@ -58,6 +60,7 @@ const data = {
       rating: 4.5,
       stock: 2,
       slug: 'game_3',
+      numReviews: 7,
     },
   ],
 };
