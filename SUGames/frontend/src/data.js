@@ -1,8 +1,26 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {
+      name: 'Basir',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'John',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
+
   products: [
     {
       name: 'Spiderman',
-      image: '/images/spidermanimg.jpg',
+      imageURL: '/images/spidermanimg.jpg',
+      category: 'Action Game',
       edition: 'Game of the Year',
       description: 'best game ever',
       genres: [],
@@ -10,11 +28,13 @@ const data = {
       distributor: 'Sony',
       comments: [],
       rating: 4.5,
-      stock: 0,
+      stock: 2,
+      slug: 'game_1',
     },
     {
       name: 'V Rising',
-      image: '/images/vrisingimg.jpg',
+      imageURL: '/images/vrisingimg.jpg',
+      category: 'Survival Game',
       edition: 'Game of the Year',
       description: 'best game ever',
       genres: [],
@@ -23,10 +43,12 @@ const data = {
       comments: [],
       rating: 4.5,
       stock: 0,
+      slug: 'game_2',
     },
     {
       name: 'FIFA 2022',
-      image: '/images/fifa22img.jpg',
+      imageURL: '/images/fifa22img.jpg',
+      category: 'Sports Game',
       edition: 'Game of the Year',
       description: 'best game ever',
       genres: [],
@@ -35,6 +57,7 @@ const data = {
       comments: [],
       rating: 4.5,
       stock: 2,
+      slug: 'game_3',
     },
   ],
 };
