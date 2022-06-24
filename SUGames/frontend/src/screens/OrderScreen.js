@@ -76,18 +76,13 @@ export default function OrderScreen() {
     if (!userInfo) {
       return navigate('/login');
     }
-    if (
-      !order._id ||
-      successPay ||
-      successDeliver ||
-      (order._id && order._id !== orderId)
-    ) {
+    if (!order._id || (order._id && order._id !== orderId)) {
       fetchOrder();
     }
     if (successDeliver) {
       dispatch({ type: 'DELIVER_RESET' });
     }
-  }, [order, userInfo, orderId, navigate, successPay, successDeliver]);
+  }, [order, userInfo, orderId, navigate, successDeliver]);
   async function deliverOrderHandler() {
     try {
       dispatch({ type: 'DELIVER_REQUEST' });
@@ -209,7 +204,7 @@ export default function OrderScreen() {
                     </Col>
                   </Row>
                 </ListGroup.Item>
-                {userInfo.isAdmin && order.isPaid && !order.isDelivered && (
+                {userInfo.isAdmin && !order.isDelivered && (
                   <ListGroup.Item>
                     {loadingDeliver && <LoadingBox></LoadingBox>}
                     <div className="d-grid">
